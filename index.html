@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <div class="container-fluid">
+        <div class=" row col-11 m-auto mt-3">
+
+            <div class="col-12 col-md-9 divider-line position-relative">
+
+                <!-- nav  -->
+                <div class="d-flex justify-content-between align-items-end nav-bar position-sticky w-100 bg-white pb-3 px-3">
+                    <div class="">
+                        <h4 class="text-primary">My Shop</h4>
+                        <small class="text-black-50">Bootstrap and JQuery</small>
+                    </div>
+                    <div class="d-flex">
+                        <input type="text" placeholder="Search" id="search" class="form-control me-2">
+                        <select name="category" id="category" class="category form-select">
+                            <option class="selected" value="0">All Categories</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row row-cols-1 row-cols-md-3 g-4 products mt-5"></div>
+            </div>
+
+            <div class="col-12 col-md-3 vh-100 overflow-scroll cart ">
+                <div class="">
+                    <div class=" d-flex justify-content-between align-items-end position-sticky top-0 bg-white ">
+                        <div class="">
+                            <h4 class="text-primary">My Cart</h4>
+                            <small class="text-black-50">Added Items</small>
+                        </div>
+                        <div class="">
+                            <h4>
+                                <span class="unit">0</span>
+                                <i class="fa fa-cart-plus text-primary"></i>
+                            </h4>
+                        </div>
+                </div>
+                <div class="px-3 cart-to-show"></div>
+                <div class="px-3 total position-sticky bottom-0 bg-white">
+                </div>
+                </div>                
+            </div>
+        </div>
+        
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./app.js"></script>
+</body>
+</html>

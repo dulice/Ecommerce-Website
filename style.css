@@ -1,0 +1,69 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f4f4f4;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(173, 172, 172);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.divider-line {
+  border-right: 1px solid rgb(189, 189, 189);
+  height: 100vh;
+  overflow: scroll;
+}
+
+.nav-bar {
+  opacity: 0.9;
+  z-index: 10;
+  top: 0;
+}
+
+.product-img {
+  height: 150px;
+  width: auto;
+  margin-bottom: -40px;
+  transition: 0.5s;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.product-img:hover {
+  transform: rotate(-10deg);
+}
+
+.title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.quantity {
+  width: 40px;
+}
+
+.cart-img {
+  height: 50px;
+  width: auto;
+}
