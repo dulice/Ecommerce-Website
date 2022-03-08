@@ -41,6 +41,10 @@ input[type="number"] {
   top: 0;
 }
 
+.cart-sm {
+  display: none;
+}
+
 .product-img {
   height: 150px;
   width: auto;
@@ -66,4 +70,25 @@ input[type="number"] {
 .cart-img {
   height: 50px;
   width: auto;
+}
+
+.fa-arrow-circle-left {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  .cart-to-hide {
+    display: none;
+  }
+  .cart-sm {
+    display: block;
+  }
+  .cart-to-show-sm {
+    position: absolute;
+    z-index: 20;
+    background: white;
+  }
+  .fa-arrow-circle-left {
+    display: block;
+  }
 }

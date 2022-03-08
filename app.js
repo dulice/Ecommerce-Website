@@ -194,3 +194,13 @@ $(".cart-to-show").delegate(".quantity", "keyup", function() {
     $(this).parent().siblings("p").find(".each-price").text(newCost);
     total();
 })
+
+$(".cart-sm").on("click", function() {
+    $(".cart-item").toggleClass("cart-to-hide");
+    $(".cart-item").toggleClass("cart-to-show-sm");
+})
+
+$(".fa-arrow-circle-left").on("click", function() {
+    $(".cart-item").toggleClass("cart-to-hide");
+    $(".cart-item").toggleClass("cart-to-show-sm");
+})
